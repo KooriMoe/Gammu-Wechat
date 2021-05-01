@@ -41,7 +41,7 @@ if __name__ == "__main__":
 
     # 验证码短信识别
     if "验证码" in text:
-        captchaCode = ','.join(re.findall("\d{4}|\d{6}", text))
+        captchaCode = ','.join(re.findall("\d{6}|\d{4}", text))
         smsSource = getSource(text)
         finalContent = "[%s:"%smsSource + "%s] "%captchaCode + text.replace("【%s】"%smsSource, "")
         text = finalContent
