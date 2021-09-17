@@ -7,7 +7,7 @@ import datetime
 import subprocess
 
 #微信推送程序
-pushToWechatPyFile = '/home/ubuntu/Gammu-Wechat/pushToWechat.py'
+pushToWechatPyFile = '/home/pi/tools/pushToWechat.py'
 
 if __name__ == "__main__":
     #----------------------获取短信内容----------------------
