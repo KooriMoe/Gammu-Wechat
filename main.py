@@ -65,7 +65,7 @@ def wechat():
                 message2 = message.replace("!send ", "")
                 text = message2.split(" ")[0]
                 phone = message2.replace(text + " ", "")
-                status = os.popen("echo " + text + " | sudo gammu sendsms TEXT " + phone).read()
+                status = os.popen("echo " + text + " | sudo gammu sendsms TEXT " + phone + "-unicode").read()
                 reply = create_reply("收信人: " + phone + "\n短信内容: " + text + "\n状态: " +  status, msg).render()
                 res = crypto.encrypt_message(reply, nonce, timestamp)
                 return res
