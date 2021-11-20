@@ -5,6 +5,7 @@ import requests
 import json
 import datetime
 import subprocess
+import re
 
 #微信推送程序
 pushToWechatPyFile = '/home/ubuntu/Gammu-Wechat/pushToWechat.py'
