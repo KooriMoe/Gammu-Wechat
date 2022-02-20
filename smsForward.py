@@ -20,7 +20,10 @@ if __name__ == "__main__":
         
     #多条短信内容
     else:
-        text = os.environ['DECODED_0_TEXT']
+        for i in range(1, numParts + 1):
+            varname = "DECODED_%d_TEXT" % i
+            if varname in os.environ:
+                text = text + os.environ[varname]
 
     #发件人
     sender = os.environ['SMS_1_NUMBER']
