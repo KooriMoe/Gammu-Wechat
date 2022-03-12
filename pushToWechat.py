@@ -2,7 +2,6 @@
 
 # Gammu-Wechat - pushToWechat.py
 # The original author: https://post.smzdm.com/p/a4wme8zx/
-# Edited by TheZihanGu.
 
 import os
 import sys
