@@ -30,11 +30,11 @@ python3 main.py
 关于接收短信的代码来源于 [https://post.smzdm.com/p/a4wme8zx/](https://post.smzdm.com/p/a4wme8zx/)，部署可参照来源文章进行。   
 
 ## 短信处理功能(smsProcess.py)
-目前，Gammu-Wechat 添加了一些来自 [smsProcess.py](https://github.com/TheZihanGu/smsProcess.py) 的功能。现在，Gammu-Wechat 将在发送微信通知前自动对以下短信内容进行相应处理。   
+现在，Gammu-Wechat 将在发送微信通知前自动对以下短信内容进行相应处理。   
 
 * 短信验证码: 将验证码提前, 并整合到正文发送来源中。   
 * 菜鸟驿站取件码短信: 将取件码提前, 并整合到正文发送来源中。   
 
-如果您希望添加更多功能，您可以向 [smsProcess.py](https://github.com/TheZihanGu/smsProcess.py) 提交 Pull Request.   
+如果您希望添加更多功能，您可以向本 Repo 提交 Pull Request.   
 
 * 该功能代码的 LICENSE 为 AGPLv3.
