@@ -1,6 +1,6 @@
 # Gammu-Wechat
 可以帮助你完成 Gammu + Raspberry Pi 接收短信并推送到企业微信的程序整合包。   
-请注意，若想完成企业微信操作发送短信的行为，**必须**让程序端口(25182)暴露在公网。这个步骤可有多种解决方法，例如路由器端口映射+DDnS(适用于拥有公网IP的环境)或利用内网穿透/FRP进行。
+请注意: 如果希望实现企业微信发送短信的功能，**必须**将程序端口(25182)暴露在公网以供调用。你可以通过在路由器设置 NAT 转发并设置 DDNS 解析或利用 Frp 工具实现。
 
 ## 配置
 在使用前，请先根据企业微信的配置信息编辑 `config.py`.   
@@ -38,3 +38,5 @@ python3 main.py
 如果您希望添加更多功能，您可以向本 Repo 提交 Pull Request.   
 
 * 该功能代码的 LICENSE 为 AGPLv3.
+
+Copyright © 2022 KooriMoe. All rights reserved.
